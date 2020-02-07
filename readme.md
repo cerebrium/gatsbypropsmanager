@@ -3,7 +3,7 @@ This is a simple way to fake props in gatsby. It allows you to add key:value pai
 // import the props from gatsbypropshandler
 import { props } from 'gatsbypropshandler'
 
-// add a prop in the form of an object .... and only an object, nothing else works at present.... it should fail gracefully though
+// add a prop in the form of an object .... and only an object, nothing else works at present.... it should fail gracefully though <br />
 props({
     hello: 'world'
 })
