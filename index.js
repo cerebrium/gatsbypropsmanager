@@ -2,12 +2,27 @@
 var storageObject = {
     baseValue: 'hello, welcome to my module. not too complicated, but hopefully useful!'
 }
-// 
+
 
 // this is just a way to access an object outside of the current component for gatsby
 exports.props = function(prop) {
-
     
+    // if prop is an array of objects
+    if (Array.isArray(prop)) {
+        // grab the array of keys, then array of values... push them into the storage object
+
+        // array of keys 
+        let arrayOfKeys = Object.keys(prop)
+
+        // array of values 
+        let arrayOfValues = Object.values(prop)
+
+        // for each object in the array add the object to the overall object
+        prop.forEach((ele, index) => {
+            storageObject[arrayOfKeys[index]] = arrayOfValues[index]
+        })
+    }
+
     // going to force user to throw objects into this function, then just push them into a larger object for retrieval
     if (typeof prop === 'object') {
         // after object check, can't allow arrays or null

@@ -1,6 +1,6 @@
 {
   "name": "gatsbypropshandler",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "simple way to store props in gatsby",
   "main": "index.js",
   "scripts": {
