@@ -3,7 +3,6 @@ var storageObject = {
     baseValue: 'hello, welcome to my module. not too complicated, but hopefully useful!'
 }
 
-
 // this is just a way to access an object outside of the current component for gatsby
 exports.props = function(prop) {
     
