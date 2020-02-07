@@ -11,15 +11,11 @@ exports.props = function(prop) {
     if (Array.isArray(prop)) {
         // grab the array of keys, then array of values... push them into the storage object
 
-        // array of keys 
-        let arrayOfKeys = Object.keys(prop)
-
-        // array of values 
-        let arrayOfValues = Object.values(prop)
-
         // for each object in the array add the object to the overall object
         prop.forEach((ele, index) => {
-            storageObject[arrayOfKeys[index]] = arrayOfValues[index]
+            let thisKey = Object.keys(ele)
+            let thisValue = Object.values(ele)
+            storageObject[thisKey[0]] = thisValue
         })
     }
 
