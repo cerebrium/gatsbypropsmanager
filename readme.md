@@ -1,5 +1,7 @@
 This is a simple way to fake props in gatsby. It allows you to add key:value pairs to a file that is able to be refrenced anywhere in your code. the format looks like this:
 
+// now works with arrays!   ... just put an array into the prop field and it will destructure and the the objects in the array for you.... if it is not an array of objects it will fail gracefully
+
 // import the props from gatsbypropshandler
 import { props } from 'gatsbypropshandler'
 
